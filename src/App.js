@@ -16,22 +16,22 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">HOME</a>
+                <a className="nav-link" href="/home">HOME</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">OUR WORK</a>
+                <a className="nav-link" href="/home">OUR WORK</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">THE DESIGNER</a>
+                <a className="nav-link" href="/home">THE DESIGNER</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">RENTALS</a>
+                <a className="nav-link" href="/home">RENTALS</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">PACKAGES</a>
+                <a className="nav-link" href="/home">PACKAGES</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">/ A / STUDIO</a>
+                <a className="nav-link" href="/home">/ A / STUDIO</a>
               </li>
             </ul>
           </div>
