@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from './carousel/homeSlider';
 import './index.css';
+import './mobile.css';
 
 class App extends Component {
 
@@ -35,20 +36,25 @@ class App extends Component {
     //     navbar.classList.remove('scrolled')
     //   }
     // }
+
+
   }
 
   render() {
     return (
       <div>
-        <div className="heart-shape"></div>
-        <div className="heart-shape2"></div>
-        <div className="bg-circle-1 bg-circle"></div>
+        <div className="stop"></div>
+        <div className="sbottom"></div>
+        <div className="seye"></div>
+        <div className="sbottompatch"></div>
 
         <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
           <div className="container-fluid">
             <a href="/home" className="navbar-brand">Andrea Suarez Atelier</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon">
+                <i class="hamburger fas fa-bars"></i>
+              </span>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
@@ -75,10 +81,6 @@ class App extends Component {
           </div>
         </nav>
 
-        <div className="path-2">
-
-        </div>
-
         <header className="masthead text-white">
           <div className="masthead-content">
             <div className="container-fluid">
@@ -88,7 +90,8 @@ class App extends Component {
                   <div className="col-lg-6 col-sm-12">
                     <div className="left-col">
 
-                      <img className="img-fluid left-img" src="./img/lefto.png" alt="" />
+                      {/* <img className="img-fluid left-img" src="./img/lefto.png" alt="" /> */}
+                      <img class="img-fluid" src="https://placehold.co/900x400" alt="" />
 
                       <div className="name">
                         <p>ANDREA</p>
@@ -105,7 +108,7 @@ class App extends Component {
                     </div>
                   </div>
 
-                  <div className="col-lg-5 col-sm-12">
+                  <div className="col-lg-6 col-sm-12">
                     <div className="right-side">
                       <center>
                         <Carousel />
@@ -114,7 +117,7 @@ class App extends Component {
                   </div>
                 </div>
               </section>
-
+              {/* 
               <section className="home-section">
                 <div className="row">
                   <div className="col-lg-6 col-sm-12">
@@ -132,7 +135,7 @@ class App extends Component {
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> */}
 
             </div>
           </div>

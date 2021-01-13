@@ -123,7 +123,9 @@ div#shop-now {
   max-height: 400px;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   .heart-shape {
     -webkit-transform: rotate(65deg);
     -moz-transform: rotate(65deg);
@@ -133,11 +135,19 @@ div#shop-now {
 
     transform: rotate(90deg);
     position: absolute;
-    width: 290px;
-    height: 285px;
-    left: -81px;
+    width: 285px;
+    height: 355px;
+    left: -50px;
     background-color: rgba(170, 108, 57, 1);
-    top: -35px;
+    top: -80px;
+    /* 
+    transform: rotate(65deg);
+    position: absolute;
+    width: 315px;
+    height: 330px;
+    background-color: rgba(170, 108, 57, 1);
+    top: -50px;
+    left: -30px; */
   }
 
   .heart-shape:after {
@@ -164,10 +174,10 @@ div#shop-now {
 
   .bg-circle-1 {
     position: absolute;
-    height: 180px;
-    width: 375px;
-    top: 335px;
-    left: -15px;
+    height: 280px;
+    width: 450px;
+    top: 285px;
+    left: -5px;
     background-color: #fff;
     transform: rotate(-15deg);
   }
@@ -183,6 +193,78 @@ div#shop-now {
     box-shadow: -2px 10px 8px 6px rgba(0, 0, 0, 0.5);
     background-color: #9d8d76;
     z-index: 9999;
+  }
 }
 
+.stop {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  width: 200px;
+  height: 600px;
+  background-color: rgba(170, 108, 57, 1);
+  top: -230px;
+  left: 159px;
+  z-index: 1;
 }
+
+.stop:after {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+  content: "";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(170, 108, 57, 1);
+}
+
+.sbottom {
+  background-color: rgba(170, 108, 57, 1);
+  height: 260px;
+  width: 215px;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+}
+
+.seye {
+  position: absolute;
+  margin: 0 auto;
+  width: 315px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 100% 0px;
+  transform: rotate(183deg);
+  top: 135px;
+  left: 0px;
+}
+
+.sbottompatch{
+  background-color: #fff;
+  height: 260px;
+  width: 215px;
+  position: absolute;
+  top: 222px;
+  left: 150px;
+}
+
+.hamburger {
+  color: rgba(170, 108, 57, 1);
+  font-size: 25px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

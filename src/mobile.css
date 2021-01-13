@@ -1,0 +1,138 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar-custom .navbar-nav {
+    background-color: #aa6c39bf !important;
+  }
+
+  .navbar-custom .navbar-nav .nav-item .nav-link {
+    color: #fff;
+  }
+
+  .stop {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(170, 108, 57, 1);
+    top: -40px;
+    left: 0px;
+    z-index: 1;
+  }
+
+  .stop:after {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    content: "";
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(170, 108, 57, 1);
+  }
+
+  .sbottom {
+    background-color: rgba(170, 108, 57, 1);
+    height: 260px;
+    width: 215px;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+  }
+
+  .seye {
+    position: absolute;
+    margin: 0 auto;
+    width: 315px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 100% 0px;
+    transform: rotate(187deg);
+    top: 130px;
+    left: -10px;
+  }
+
+  .sbottompatch {
+    background-color: #fff;
+    height: 260px;
+    width: 215px;
+    position: absolute;
+    top: 222px;
+    left: 150px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-custom .navbar-nav {
+    background-color: #aa6c39bf !important;
+  }
+
+  .navbar-custom .navbar-nav .nav-item .nav-link {
+    color: #fff;
+  }
+
+  .stop {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    background-color: rgba(170, 108, 57, 1);
+    top: -115px;
+    left: 60px;
+    z-index: 1;
+  }
+
+  .stop:after {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    content: "";
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(170, 108, 57, 1);
+  }
+
+  .sbottom {
+    background-color: rgba(170, 108, 57, 1);
+    height: 260px;
+    width: 215px;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+  }
+
+  .seye {
+    position: absolute;
+    margin: 0 auto;
+    width: 315px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 100% 0px;
+    transform: rotate(187deg);
+    top: 130px;
+    left: -10px;
+  }
+
+  .sbottompatch {
+    background-color: #fff;
+    height: 260px;
+    width: 215px;
+    position: absolute;
+    top: 222px;
+    left: 150px;
+  }
+}
