@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from './carousel/homeSlider';
 import './index.css';
-import './mobile.css';
+import './responsive.css';
 
 class App extends Component {
 
@@ -53,7 +53,7 @@ class App extends Component {
             <a href="/home" className="navbar-brand">Andrea Suarez Atelier</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon">
-                <i class="hamburger fas fa-bars"></i>
+                <i className="hamburger fas fa-bars"></i>
               </span>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
@@ -91,7 +91,7 @@ class App extends Component {
                     <div className="left-col">
 
                       {/* <img className="img-fluid left-img" src="./img/lefto.png" alt="" /> */}
-                      <img class="img-fluid" src="https://placehold.co/900x400" alt="" />
+                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
 
                       <div className="name">
                         <p>ANDREA</p>

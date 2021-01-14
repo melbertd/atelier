@@ -2,6 +2,16 @@ body {
   font-family: "Open Sans", sans-serif !important;
 }
 
+/* overrides */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* end overrides */
+
 .leftee {
   border: 1px solid black;
 }
@@ -266,5 +276,4 @@ div#shop-now {
 /* Large devices (laptops/desktops, 992px and up) */
 /* @media only screen and (min-width: 992px) {...} */
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
+
