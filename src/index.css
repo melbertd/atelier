@@ -20,6 +20,10 @@ body {
   text-align: right;
 }
 
+.left-col, .right-col{
+  margin-bottom: 20px;
+}
+
 .name {
   font-size: 50px;
   font-weight: 800;

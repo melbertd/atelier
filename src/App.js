@@ -65,7 +65,7 @@ class Home extends Component {
                     <div className="left-col">
 
                       {/* <img className="img-fluid left-img" src="./img/lefto.png" alt="" /> */}
-                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                      <img className="img-fluid" src="https://placehold.co/800x400" alt="" />
 
                       <div className="name">
                         <p>ANDREA</p>
@@ -110,7 +110,7 @@ class Home extends Component {
                 <div className="row">
                   <div className="col-lg-6 col-sm-12">
                     <div className="left-col">
-                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                      <img className="img-fluid" src="https://placehold.co/800x400" alt="" />
                     </div>
                   </div>
 
@@ -142,7 +142,7 @@ class Home extends Component {
 
                   <div className="col-lg-6 col-sm-12">
                     <div className="right-side">
-                      <img className="img-fluid" src="https://placehold.co/700x800" alt="" />
+                      <img className="img-fluid" src="https://placehold.co/800x900" alt="" />
                     </div>
                   </div>
                 </div>
@@ -166,15 +166,15 @@ class Home extends Component {
                     <div className="row">
                       <div className="col-lg-6 col-sm-12">
                         <div className="left-col">
-                          <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                          <img className="img-fluid" src="https://placehold.co/800x420" alt="" />
                           <div className="spacer"></div>
-                          <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                          <img className="img-fluid" src="https://placehold.co/800x420" alt="" />
                         </div>
                       </div>
 
                       <div className="col-lg-6 col-sm-12">
                         <div className="right-side">
-                          <img className="img-fluid" src="https://placehold.co/700x850" alt="" />
+                          <img className="img-fluid" src="https://placehold.co/800x900" alt="" />
                         </div>
                       </div>
                     </div>
