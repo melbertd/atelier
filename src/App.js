@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import Carousel from './carousel/homeSlider';
 
+
 class Home extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMoreImage: false
+    }
+  }
 
   componentDidMount() {
     var socialFloat = document.querySelector('#shop-now');
@@ -32,15 +40,22 @@ class Home extends Component {
     //     navbar.classList.remove('scrolled')
     //   }
     // }
+  }
 
-
+  handleLoadMoreImage = () => {
+    this.setState({
+      showMoreImage: true
+    })
   }
 
   render() {
+
+    let { showMoreImage } = this.state;
+
     return (
       <div>
 
-        <header className="masthead text-white">
+        <div className="masthead text-white">
           <div className="masthead-content">
             <div className="container-fluid">
 
@@ -114,7 +129,7 @@ class Home extends Component {
 
               <section className="home-section">
                 <div className="row">
-                  <div className="col-lg-6 col-sm-12">
+                  <div className="col-lg-6 col-sm-12 align-self-center">
                     <div className="left-col">
                       <h2 className="text-right name">Alii autem quibus ego</h2>
                       <p className="text-right description">
@@ -133,29 +148,43 @@ class Home extends Component {
                 </div>
               </section>
 
-              <section className="home-section">
-                <div className="row">
-                  <div className="col-lg-6 col-sm-12">
-                    <div className="left-col">
-                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
-                      <br/>
-                      <br/>
-                      <br/>
-                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+              {
+                !showMoreImage ?
+                  <div className="container">
+                    <div className="row">
+                      <div className="col text-center">
+                        <button className="loadMoreImage" onClick={this.handleLoadMoreImage}>Show more Images</button>
+                      </div>
                     </div>
                   </div>
+                  : <></>
+              }
 
-                  <div className="col-lg-6 col-sm-12">
-                    <div className="right-side">
-                      <img className="img-fluid" src="https://placehold.co/700x800" alt="" />
+              {
+                showMoreImage ?
+                  <section className="home-section">
+                    <div className="row">
+                      <div className="col-lg-6 col-sm-12">
+                        <div className="left-col">
+                          <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                          <div className="spacer"></div>
+                          <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                        </div>
+                      </div>
+
+                      <div className="col-lg-6 col-sm-12">
+                        <div className="right-side">
+                          <img className="img-fluid" src="https://placehold.co/700x850" alt="" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </section>
+                  </section>
+                  : ""
+              }
 
             </div>
           </div>
-        </header>
+        </div>
       </div>
     );
   }
