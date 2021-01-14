@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from './carousel/homeSlider';
-import './index.css';
-import './responsive.css';
 
-class App extends Component {
+class Home extends Component {
 
   componentDidMount() {
     var socialFloat = document.querySelector('#shop-now');
@@ -19,8 +17,6 @@ class App extends Component {
         socialFloat.style.position = 'absolute';
       if (document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
         socialFloat.style.position = 'fixed'; // restore when you scroll up
-
-      // socialFloat.innerHTML = document.body.scrollTop + window.innerHeight;
     }
 
     document.addEventListener("scroll", function () {
@@ -43,43 +39,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="stop"></div>
-        <div className="sbottom"></div>
-        <div className="seye"></div>
-        <div className="sbottompatch"></div>
-
-        <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
-          <div className="container-fluid">
-            <a href="/home" className="navbar-brand">Andrea Suarez Atelier</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon">
-                <i className="hamburger fas fa-bars"></i>
-              </span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <a className="nav-link" href="/home">HOME</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/home">OUR WORK</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/home">THE DESIGNER</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/home">RENTALS</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/home">PACKAGES</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/home">/ A / STUDIO</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
 
         <header className="masthead text-white">
           <div className="masthead-content">
@@ -117,46 +76,89 @@ class App extends Component {
                   </div>
                 </div>
               </section>
-              {/* 
+
+              <section className="home-section">
+                <div className="row">
+                  <div className="col-lg-6 offset-lg-3 col-sm-12">
+                    <h2 className="text-center name">THE ATELIER</h2>
+                    <p className="text-center description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis velit eu nunc lobortis cursus.
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                      Curabitur vulputate nibh eget placerat semper. Integer blandit pretium magna, eu volutpat nisl.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+
               <section className="home-section">
                 <div className="row">
                   <div className="col-lg-6 col-sm-12">
                     <div className="left-col">
-                      <img className="img-fluid" src="https://placehold.co/700x400" alt="" />
-                      <br /><br />
-                      <img className="img-fluid" src="https://placehold.co/700x400" alt="" />
+                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
                     </div>
                   </div>
 
+                  <div className="col-lg-6 col-sm-12">
+                    <div className="right-side">
+                      <h2 className="text-left name">Alii autem quibus ego</h2>
+                      <p className="text-left description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis velit eu nunc lobortis cursus.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Curabitur vulputate nibh eget placerat semper. Integer blandit pretium magna, eu volutpat nisl.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
-                  <div className="col-lg-5 col-sm-12">
+              <section className="home-section">
+                <div className="row">
+                  <div className="col-lg-6 col-sm-12">
+                    <div className="left-col">
+                      <h2 className="text-right name">Alii autem quibus ego</h2>
+                      <p className="text-right description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis velit eu nunc lobortis cursus.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Curabitur vulputate nibh eget placerat semper. Integer blandit pretium magna, eu volutpat nisl.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-6 col-sm-12">
                     <div className="right-side">
                       <img className="img-fluid" src="https://placehold.co/700x800" alt="" />
                     </div>
                   </div>
                 </div>
-              </section> */}
+              </section>
+
+              <section className="home-section">
+                <div className="row">
+                  <div className="col-lg-6 col-sm-12">
+                    <div className="left-col">
+                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                      <br/>
+                      <br/>
+                      <br/>
+                      <img className="img-fluid" src="https://placehold.co/900x400" alt="" />
+                    </div>
+                  </div>
+
+                  <div className="col-lg-6 col-sm-12">
+                    <div className="right-side">
+                      <img className="img-fluid" src="https://placehold.co/700x800" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </section>
 
             </div>
           </div>
         </header>
-
-
-        <div className="shop-now-parent">
-          <div id="shop-now">
-            Shop Now
-          </div>
-        </div>
-
-        <footer id="footer" className="py-5 bg-black">
-          <div className="container">
-            <p className="m-0 text-center text-white small">Copyright &copy; Your Website 2020</p>
-          </div>
-        </footer>
-
       </div>
     );
   }
 }
 
-export default App;
+export default Home;
